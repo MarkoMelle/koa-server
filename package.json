@@ -1,0 +1,28 @@
+{
+  "name": "koa-server",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "forever server.js",
+    "watch": "forever -w server.js",
+    "lint": "eslint ."
+  },
+  "author": "coursar",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/cors": "^4.0.0",
+    "forever": "^4.0.3",
+    "koa": "^2.14.1",
+    "koa-body": "^4.2.0",
+    "koa-static": "^5.0.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.30.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0"
+  }
+}
